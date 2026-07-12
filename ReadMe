@@ -1,0 +1,118 @@
+🏋️ LiftLab — AI-Powered Fitness & Nutrition Coach
+
+
+An adaptive mobile app that builds personalised workout and meal plans — then continuously rebuilds them as your body, habits, and goals change.
+
+
+📖 Overview
+
+LiftLab is not a one-time plan generator. It's designed around a single core challenge: telling the difference between a person having an off day and a person hitting a genuine plateau — and adjusting the plan accordingly, automatically.
+
+The app combines onboarding-driven personalisation, a conversational AI coach, live biometric tracking, and a fully reactive profile system so that every change a user makes actually flows through to their active plan.
+
+
+✨ Features
+
+🚀 Landing & Onboarding
+
+
+Clean value-prop landing screen highlighting four core capabilities: 💪 Adaptive Workouts, 🥗 Smart Nutrition, 📊 Progress Analytics, 🧠 AI Coaching
+
+🔐 Sign in via email/password or Google/Apple
+Guided multi-step onboarding (not a long static form):
+
+Personal Info — name, age, height, weight
+⚖️ Live BMI Calculator — recalculates instantly as height/weight are entered, with color-coded category (Underweight → Healthy → Overweight → Obese) on a gradient scale
+🎯 Goal Selection — Build Muscle, Lose Weight, Improve Endurance, Get Stronger, Stay Active
+🩹 Injury History — lower back, knee, shoulder, hip, wrist, or none
+🏋️ Equipment Access — home gym, dumbbells only, resistance bands, bodyweight only
+
+
+
+
+🏠 Home Dashboard
+
+
+🔥 Daily streak tracker for habit consistency
+Live progress rings: calories, protein, water, steps — each against a personalised daily target
+🧠 AI Coach Insight card — proactive recommendations (e.g. "Your protein is 20% below target this week — I've swapped your dinner to add 40g more")
+Quick access to today's workout and meal plan
+
+
+💬 AI Coach Chat
+
+
+Natural-language chat interface for adjusting plans on demand ("give me a shorter workout," "swap this meal")
+AI responses render structured, actionable cards directly inside the conversation (full exercise breakdown, Start Workout button) — not just text replies
+Quick-action chips: 🔁 Regenerate Workout, 📉 Adjust Calories, 🐟 Swap Ingredient
+
+
+🏋️ Workout Module
+
+
+Full session detail: duration, estimated calories burned, total sets
+Exercise-level detail: muscle group, rest period, rep range, per-set weight logging
+Plans follow progressive overload principles, increasing load/volume in a structured way week over week
+
+
+🥗 Meal Plan Module
+
+
+Daily nutrition summary: calories, protein, carbs, fat targets
+Meal-by-meal breakdown (breakfast, lunch, snacks, dinner) with timing, calories, and macros
+Tap-to-log meal completion
+🛒 Auto-generated shopping list from the active meal plan
+
+
+📈 Progress Dashboard
+
+
+Weight trend chart over time
+Body measurements (chest, waist, arms, thighs) with delta since last check-in
+Monthly summary: calories burned, average daily protein, sessions/week, average sleep
+This data is the input the AI uses to distinguish a real plateau from a temporary dip
+
+
+👤 Reactive Profile
+
+
+All fields (age, height, weight, goal, activity level, diet, injuries) are directly editable
+Editing triggers an automatic plan recalculation — updating weight/goal/injury status immediately reroutes the active workout and meal plan
+🛡️ Injury Check-in flow lets users report pain directly to the AI, which then adjusts the plan around the affected area while preserving overall goals
+
+
+
+🧠 AI Approach
+
+ComponentMethodWorkout generationPrompt-engineered using progressive overload principles, structured rest periods, and muscle-group balancing across the weekMeal planningCalorie/macro targets derived from goal, weight, and activity level; ingredient-level detail with shopping list generationAdaptive check-insTrend-based reasoning (weight trend + workout consistency + sleep) rather than reacting to any single day's data in isolationInjury handlingAutomatic plan rerouting around the affected muscle group while preserving the user's overall goal
+
+
+🎨 Design Principles
+
+
+Distinct color accents per module (🟠 amber for workouts, 🟢 green for AI insights) instead of one flat palette repeated everywhere
+Bento-style dashboard layouts with varied tile sizes instead of uniform stacked cards
+Oversized, poster-style stat numbers for key metrics
+AI chat always returns structured, usable cards — never plain paragraphs
+
+
+
+🛠️ Status
+
+Currently a Figma design prototype — no backend or live AI integration yet. Interactions are simulated through prompt-engineered flows and interactive prototype states.
+
+Planned next steps:
+
+
+ Wire up real AI calls (Claude/GPT API) for live plan generation
+ Persist user data (MongoDB or similar)
+ Add authentication (Auth.js or equivalent)
+ Replace prototype interactions with functional app logic
+
+
+
+📂 Project Context
+
+Built as part of an AI Tools Capstone project — Project 8: Personalised AI Fitness & Nutrition Coach (Domain: Health & Wellness).
+
+Grading focus: AI Depth (40%) · Product Quality (35%) · Presentation (25%)
