@@ -1,10 +1,11 @@
 🏋️ LiftLab — AI-Powered Fitness & Nutrition Coach
 
+Notion Document:
+https://app.notion.com/p/LiftLab-AI-Fitness-Nutrition-App-39c91d6ab62e80d88cfee09a85c8de1f?source=copy_link
 
 View the Figma Design here:
 
 https://www.figma.com/make/OoMMXuVHCl2VgoOtdQLSjw/Create-Optimal-UI-Experience?t=qliDNfj7NrekeLmO-1
-
 
 An adaptive mobile app that builds personalised workout and meal plans — then continuously rebuilds them as your body, habits, and goals change.
 
